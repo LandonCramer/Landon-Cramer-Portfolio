@@ -1,2 +1,1 @@
-# Landon-Cramer-Portfolio
- 
+To run the development server = npm run dev
