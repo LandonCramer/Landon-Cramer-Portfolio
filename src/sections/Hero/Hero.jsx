@@ -7,14 +7,14 @@ import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/resume.pdf";
-import { useTheme } from "../../common/ThemeContext"
+import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
-    const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
-    const themeIcon = theme === 'light' ? sun : moon;
-    const githubIcon = theme === 'light' ? githubLight : githubDark;
-    const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const themeIcon = theme === "light" ? sun : moon;
+  const githubIcon = theme === "light" ? githubLight : githubDark;
+  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
 
   return (
     <section id="hero" className={styles.container}>
@@ -35,18 +35,15 @@ function Hero() {
         <h1>Landon Cramer</h1>
         <h2>Full-Stack Software Engineer</h2>
         <span>
-          <a href="www.linkedin.com/in/landon-cramer" target="_blank">
+          <a href="https://www.linkedin.com/in/landon-cramer/" target="_blank">
             <img src={linkedinIcon} alt="LinkedIn Icon" />
           </a>
-        </span>
-        <span>
+
           <a href="https://github.com/LandonCramer" target="_blank">
-            <img
-              src={githubIcon}
-              alt="GithubIcon" />
+            <img src={githubIcon} alt="GithubIcon" />
           </a>
         </span>
-        <p>
+        <p className={styles.description}>
           I'm a full-stack software engineer with skills in Javascript (React),
           Python (Flask), SQL, HTML, and CSS. I'm passionate about learning and
           always looking to challenge myself. What excites me the most is using
