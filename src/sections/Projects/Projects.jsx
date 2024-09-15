@@ -20,19 +20,19 @@ function Projects() {
           src={shoeHaven}
           link="https://github.com/LandonCramer/ShoeHaven2.0"
           h3="ShoeHaven"
-          p="ShoeHaven, a web application tailored for footwear enthusiasts. This application lets users browse a curated selection of shoes, add favorites to their collection, and seamlessly purchase the pairs they love."
+          p="Web application tailored for footwear enthusiasts"
         />
         <ProjectCard
           src={birdNoise}
           link="https://github.com/LandonCramer/BirdNoise"
           h3="BirdNoise"
-          p="BirdNoise is a social platform that reimagines online conversations with infinite scrolling, dark mode, and unlimited nested posts. Engage in seamless discussions and explore content endlessly in a sleek, user-friendly environment."
+          p="Social platform that reimagines online conversations"
         />
         <ProjectCard
           src={peakExperiences}
           link="https://github.com/LandonCramer/peak-experiences"
           h3="Peak Experiences"
-          p="Discover and explore awe-inspiring activities, designed to help you create, customize, and share your ultimate bucket list. Step out of your comfort zone and turn dreams into reality with every tap."
+          p="Discover and explore awe-inspiring activities"
         />
       </div>
     </section>
