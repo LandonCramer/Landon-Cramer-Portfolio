@@ -4,9 +4,9 @@ function Contact() {
   return (
     <section id="contact" className={styles.container}>
       <h1 className="sectiontitle">Contact</h1>
-      <form action="">
+      <form action="https://formspree.io/f/mwpejynk" method="post">
         <div className="formGroup">
-          <label htmlFor="name" hidden>
+          <label for="name" hidden>
             Name
           </label>
           <input
@@ -18,7 +18,7 @@ function Contact() {
           />
         </div>
         <div className="formGroup">
-          <label htmlFor="email" hidden>
+          <label for="email" hidden>
             Email
           </label>
           <input
@@ -30,7 +30,7 @@ function Contact() {
           />
         </div>
         <div className="formGroup">
-          <label htmlFor="message" hidden>
+          <label for="message" hidden>
             Message
           </label>
           <textarea
