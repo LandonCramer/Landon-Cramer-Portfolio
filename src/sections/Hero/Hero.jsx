@@ -6,7 +6,7 @@ import githubLight from "../../assets/github-light.svg";
 import githubDark from "../../assets/github-dark.svg";
 import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/resume.pdf";
+import CV from "../../assets/LandonCramerResume.pdf";
 import { useTheme } from "../../common/ThemeContext";
 
 function Hero() {
@@ -32,26 +32,37 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
-        <h1>Landon Cramer</h1>
-        <h2>Full-Stack Software Engineer</h2>
+        <h1 className={styles.heroName}>LANDON CRAMER</h1>
+        <h2 className={styles.heroTitle}>Software Engineer · Systems & Web</h2>
+        
         <span>
           <a href="https://www.linkedin.com/in/landon-cramer/" target="_blank">
             <img src={linkedinIcon} alt="LinkedIn Icon" />
           </a>
-
           <a href="https://github.com/LandonCramer" target="_blank">
             <img src={githubIcon} alt="GithubIcon" />
           </a>
         </span>
-        <p className={styles.description}>
-          I'm a full-stack software engineer with skills in Javascript (React),
-          Python (Flask), SQL, HTML, and CSS. I'm passionate about learning and
-          always looking to challenge myself. What excites me the most is using
-          my skills to create innovative applications that make a positive
-          impact. Let's connect and build something awesome together!
+
+        <p className={styles.heroTagline}>
+          Building reliable, accessible software that opens doors for people.
         </p>
+
+        <p className={styles.heroBody}>
+          I'm a software engineer at Rézme, working across the stack with React,
+          TypeScript, Python/Flask, and Postgres. I enjoy taking messy problems,
+          breaking them into clear pieces, and shipping features that actually help
+          people. Recently I've been focused on accessibility, data-driven features,
+          and strengthening my systems and cloud skills.
+        </p>
+
+        <p className={styles.heroBody}>
+          If you're interested in fair-chance hiring, impactful tech, or just good
+          engineering, I'd love to connect.
+        </p>
+
         <a href={CV} download>
-          <button className="hover">Resume</button>
+          <button className={styles.heroResumeButton}>View Resume</button>
         </a>
       </div>
     </section>
