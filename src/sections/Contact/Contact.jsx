@@ -3,7 +3,7 @@ import styles from "./ContactStyles.module.css";
 function Contact() {
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectiontitle">Contact</h1>
+      <h1 className="sectionTitle">Contact</h1>
       <form action="https://formspree.io/f/mwpejynk" method="post">
         <div className="formGroup">
           <label for="name" hidden>

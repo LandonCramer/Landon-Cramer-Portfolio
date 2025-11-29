@@ -8,6 +8,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-top: 40px;
 }
 
 /* this means we are targeting the textarea and input that is not the type submit */
