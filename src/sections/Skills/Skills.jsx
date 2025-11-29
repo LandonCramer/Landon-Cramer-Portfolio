@@ -11,29 +11,32 @@ function Skills () {
     <section id="skills" className={styles.container}>
         <h1 className="sectionTitle">Skills</h1>
         <div className={styles.skillList}>
-           <SkillList src={themeIcon} skill="CSS" />
            <SkillList src={themeIcon} skill="JavaScript" />
-           <SkillList src={themeIcon} skill="HTML" />
+           <SkillList src={themeIcon} skill="TypeScript" />
            <SkillList src={themeIcon} skill="Python" />
-           <SkillList src={themeIcon} skill="Node" />
+           <SkillList src={themeIcon} skill="C++" />
+           <SkillList src={themeIcon} skill="SQL" />
         </div>
         <hr />
         <div className={styles.skillList}>
            <SkillList src={themeIcon} skill="React" />
            <SkillList src={themeIcon} skill="Flask" />
-           <SkillList src={themeIcon} skill="Git" />
-           <SkillList src={themeIcon} skill="PostgreSQL" />
-           <SkillList src={themeIcon} skill="SQLAlchemy" />
+           <SkillList src={themeIcon} skill="Node" />
+           <SkillList src={themeIcon} skill="HTML/CSS" />
         </div>
         <hr />
         <div className={styles.skillList}>
-           <SkillList src={themeIcon} skill="Software Development" />
-           <SkillList src={themeIcon} skill="SQL" />
-           <SkillList src={themeIcon} skill="ReactNative" />
-           <SkillList src={themeIcon} skill="Expo" />
-           <SkillList src={themeIcon} skill="GitHub" />
+           <SkillList src={themeIcon} skill="PostgreSQL" />
+           <SkillList src={themeIcon} skill="SQLAlchemy" />
+           <SkillList src={themeIcon} skill="REST APIs" />
         </div>
         <hr />
+        <div className={styles.skillList}>
+           <SkillList src={themeIcon} skill="Git" />
+           <SkillList src={themeIcon} skill="Supabase" />
+           <SkillList src={themeIcon} skill="Docker" />
+           <SkillList src={themeIcon} skill="CI/CD" />
+        </div>
     </section>
   )
 }

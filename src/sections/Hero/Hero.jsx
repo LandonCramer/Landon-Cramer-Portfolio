@@ -8,9 +8,12 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/LandonCramerResume.pdf";
 import { useTheme } from "../../common/ThemeContext";
+import { useState } from "react";
+import ResumeModal from "../../common/ResumeModal";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const themeIcon = theme === "light" ? sun : moon;
   const githubIcon = theme === "light" ? githubLight : githubDark;
@@ -50,10 +53,11 @@ function Hero() {
 
         <p className={styles.heroBody}>
           I'm a software engineer at Rézme, working across the stack with React,
-          TypeScript, Python/Flask, and Postgres. I enjoy taking messy problems,
-          breaking them into clear pieces, and shipping features that actually help
-          people. Recently I've been focused on accessibility, data-driven features,
-          and strengthening my systems and cloud skills.
+          TypeScript, Python/Flask, and Postgres. I build user-facing features like
+          interactive tutorial systems and onboarding flows, refactor components for
+          better reusability, and fix bugs that improve performance. I focus on type
+          safety, clean architecture, and shipping features that make compliance tools
+          accessible to everyone.
         </p>
 
         <p className={styles.heroBody}>
@@ -61,10 +65,19 @@ function Hero() {
           engineering, I'd love to connect.
         </p>
 
-        <a href={CV} download>
-          <button className={styles.heroResumeButton}>View Resume</button>
-        </a>
+        <button 
+          className={styles.heroResumeButton}
+          onClick={() => setIsModalOpen(true)}
+        >
+          View Resume
+        </button>
       </div>
+      
+      <ResumeModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        resumeUrl={CV}
+      />
     </section>
   );
 }
