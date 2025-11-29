@@ -66,7 +66,7 @@ p {
 }
 
 .sectionTitle {
-  margin-bottom: 30px;
+  margin: 0 0 40px 0;
 }
 
 .hover {
@@ -88,7 +88,7 @@ p {
     font-size: 20px;
   }
   .sectionTitle {
-    margin-bottom: 60px;
+    margin: 0 0 50px 0;
   }
 
   @media (width >= 1400px) {
@@ -99,7 +99,7 @@ p {
       font-size: 48px;
     }
     .sectionTitle {
-      margin-bottom: 75px;
+      margin: 0 0 60px 0;
     }
   }
 }
