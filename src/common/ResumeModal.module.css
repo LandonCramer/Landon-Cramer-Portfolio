@@ -65,9 +65,11 @@
 
 .pdfContainer {
   flex: 1;
-  overflow: hidden;
+  overflow: auto;
   padding: 0;
   min-height: 500px;
+  display: flex;
+  background: #525252;
 }
 
 .pdfViewer {
@@ -75,6 +77,7 @@
   height: 100%;
   border: none;
   min-height: 500px;
+  display: block;
 }
 
 .modalFooter {

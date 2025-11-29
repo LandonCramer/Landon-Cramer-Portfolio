@@ -31,11 +31,17 @@ function ResumeModal({ isOpen, onClose, resumeUrl }) {
           </button>
         </div>
         <div className={styles.pdfContainer}>
-          <iframe
-            src={`${resumeUrl}#toolbar=0`}
-            title="Resume PDF"
+          <object
+            data={resumeUrl}
+            type="application/pdf"
             className={styles.pdfViewer}
-          />
+          >
+            <embed
+              src={resumeUrl}
+              type="application/pdf"
+              className={styles.pdfViewer}
+            />
+          </object>
         </div>
         <div className={styles.modalFooter}>
           <a href={resumeUrl} download className={styles.downloadButton}>
