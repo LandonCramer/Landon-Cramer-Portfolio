@@ -8,12 +8,9 @@ import linkedinLight from "../../assets/linkedin-light.svg";
 import linkedinDark from "../../assets/linkedin-dark.svg";
 import CV from "../../assets/LandonCramerResume.pdf";
 import { useTheme } from "../../common/ThemeContext";
-import { useState } from "react";
-import ResumeModal from "../../common/ResumeModal";
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const themeIcon = theme === "light" ? sun : moon;
   const githubIcon = theme === "light" ? githubLight : githubDark;
@@ -67,17 +64,11 @@ function Hero() {
 
         <button 
           className={styles.heroResumeButton}
-          onClick={() => setIsModalOpen(true)}
+          onClick={() => window.open(CV, '_blank')}
         >
           View Resume
         </button>
       </div>
-      
-      <ResumeModal 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-        resumeUrl={CV}
-      />
     </section>
   );
 }
